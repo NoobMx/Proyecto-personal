@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Models\miClase;
+use App\Models\miclase;
 
 /*
 |--------------------------------------------------------------------------
@@ -35,7 +35,7 @@ Route::get('/inicio', function () {
 })->name('inicio');
 
 Route::get('/habilidad', function () {
-    $claseMia=new miClase();
+    $claseMia=new miclase();
     $claseMia->nombre='Mejia Osorio Roberto Alexis';
     $claseMia->habilidadUno='Programar';
     $claseMia->habilidadDos='Diseñar';
@@ -44,7 +44,7 @@ Route::get('/habilidad', function () {
 })->name('habilidad');
 
 Route::get('/contacto', function () {
-    $claseMia=new miClase();
+    $claseMia=new miclase();
     $claseMia->nombre='Mejia Osorio Roberto Alexis';
     $claseMia->correo='robertoalexismejia@gmail.com';
     $claseMia->telefono='5518188738';
